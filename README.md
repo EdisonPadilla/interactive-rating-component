@@ -28,7 +28,7 @@ Users should be able to:
 ![](./screenshots-solutions/screenshot1-desktop-solution.PNG)
 ![](./screenshots-solutions/screenshot2-desktop-solution.PNG)
 ![](./screenshots-solutions/screenshot1-mobile-solution.PNG)
-![](./screenshots-solutions/screenshot1-mobile-solution.PNG)
+![](./screenshots-solutions/screenshot2-mobile-solution.PNG)
 
 ### Links
 
