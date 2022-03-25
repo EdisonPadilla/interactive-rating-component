@@ -50,6 +50,7 @@ main {
 }
 
 .card-container {
+  position: relative;
   /* width: 90%; */
   width: 324px;
   padding: 24px 16px;
@@ -85,11 +86,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--light-grey);
 }
 
 .rating-value {
-  width: 40px;
+  /* width: 40px;
   height: 40px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -97,12 +97,31 @@ main {
   font-weight: 700;
   background-color: var(--dark--blue);
   border-radius: 50%;
+  transition-duration: 300ms; */
+}
+
+.rating-value button {
+  width: 40px;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: var(--light-grey);
+  font-weight: 700;
+  background-color: var(--dark--blue);
+  border: none;
+  border-radius: 50%;
   transition-duration: 300ms;
 }
 
-.rating-value:hover {
+.rating-value button:hover {
   color: var(--white);
   background-color: var(--orange);
+}
+
+.rating-value button:focus {
+  color: var(--white);
+  background-color: var(--medium--grey);
 }
 
 .submit-btn {
@@ -121,4 +140,44 @@ main {
 .submit-btn:hover {
   color: var(--orange);
   background-color: var(--white);
+}
+
+.thank-you-state-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 324px;
+  height: 100%;
+  padding: 24px 16px;
+  display: none;
+  text-align: center;
+  color: var(--white);
+  border-radius: 12px;
+  background-color: #181d27;
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+.thank-you-state-card.show-card {
+  display: block;
+  opacity: 1;
+}
+
+.thank-you-state-card .img-container {
+  margin-bottom: 16px;
+}
+
+.result-box {
+  width: 60%;
+  margin: 0 auto;
+  padding: 8px 4px;
+  font-size: 15px;
+  color: var(--orange);
+  background-color: var(--dark--blue);
+  border-radius: 24px;
+}
+
+.thank-you-state-card .text {
+  font-size: 15px;
+  color: var(--light-grey);
 }
